@@ -1,0 +1,326 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Creature profile:\
+\
+cutups \
+Givers\
+\
+json is way more flexible then sql, but it's about to to structure the questions you send to a database\
+as the database can't just parse anything. it will only recogniZe questions that it has keywords for already\
+\
+but the ultimate ultimate would be to try and have data leak and drift in an asymmetrical way. a more distributed-via-activation type way. so that it's not that everything is accessible to everyone, all at the same time. //but when a thingy is picked up\
+\
+this is maybe a larger excercise that maybe i can sneak into whatever their money fab meeting will be about... but i need to start making hard decisions about what data types/meanings will get associated with each user, as it's not easy to add things later.i guess one secret field is ghost / not ghost    --- but ghosts aren't yet registered ... so they actually just won't have an entry in the database yet.\
+once registered, they will have a status of true\
+_'; - [2:54 PM]\
+yezzzz\
+- o . . - [2:55 PM]\
+so essentially, once they are ghost ---> creature ----> status: true\
+_'; - [2:55 PM]\
+eeee  fabnamez\
+- o . . - [2:55 PM]\
+do we want to keep location?\
+but we 'can' make locations be toggles with fab places\
+so really, each key (the value pair)... the value or value choices can be fab, but i need to start thinking about how i want things to relate, what things will be required, and what things will change or add over time.\
+of course there is SOP stage /// and then maybe event association....\
+but are there other fab things i can have faux form data submissions for... like affinity : ?\
+*or maybe that's how i should state the question. if you had to have a form you had to fill out to register, what's the funnest fab fugitive way we could populate it* (edited) \
+\
+  and the values do have to be strings, for now.\
+\
+_'; - [2:58 PM]\
+ok!!\
+- o . . - [2:59 PM]\
+we could be sneaky and see if it's possible to add soundbutton triggers to it. but i also need to think about what would be in the form. in a writing way. but before i bring that to the brian, i need more pedagogy of the useless\
+*it's also helpful to think about the ways in which people might search for, or how we'd want to query the database, when thinking about these fields. like how we'd associate events/people\
+_'; - [3:04 PM]\
+oops\
+_'; - [3:17 PM]\
+in a fab fab world with only the keyboard heheh:acsii art like things like the shrug emoji but even from option //---____-----`````'''''''  (ok not useful for querying database)\
+location/// date//time ~~~ could be nice to have but could also be fabbed ?? choose the universe //like packing a backpack in the morning hehe\
+or what's in the pocket?\
+weather -- ?? could something with the weather be in the login (or maybe this is for later)\
+color [string of numbers] ///emojisallowed??? does this count as strings if it's : capybara : : popcat : etc\
+forsuresneaky\
+http://inflexions.org/cepholopodresearch/sketch402663/colortyping.html\
+- o . . - [3:23 PM]\
+well. string is text. so no... not emojis. or. ok. there is an avatar potential, but that means working with an existing API, --- as i have nnnnoooo desire to build one myself. or essentially, it would be like slack is.it's more.  take away the option to not write words : PPPP\
+if you do need to select or type things /// channeling every time you've fake-filledd out a form, even/ /// what are opaquely 'useless' form fields we could have\
+_'; - [3:24 PM]\
+color of the tiniest thing\
+- o . . - [3:24 PM]\
+you have to re-verse think things, to the database perspective\
+not the user front end experience\
+this isn't about the U.I.\
+_'; - [3:24 PM]\
+databasedatabase\
+- o . . - [3:25 PM]\
+its thinkingschool: \{\
+      type: String,\
+      required: true\
+    \},obv we don't care about school.\
+so. ok. yes color // but think beyond that.wavy lines wiggle lines shrug lines\
+think a drop down menu, and what options might be fun to pull down -- that are still Strings that we can associate and query in imaginative ways, in the database -- in a non individualiZed way\
+picnic: \{\
+type: String\
+value: [blanket, backpack, pocket, fort, tunnel, kite]\
+\}\
+\
+  i don't know. i'm just trying to figure out 'how else' to do this.\
+\
+affinity: \{\} (edited) \
+_'; - [3:31 PM]\
+screech: \{\
+type: String\
+value: [eee, ooO, aaaa, uhhh, oop]\
+\}poke \{\
+type: String\
+value: [bounce, boing, pop, wiggle]\
+\}\
+- o . . - [3:33 PM]\
+yes. more like that. but now, not an onomatopoeia.  or again, if we 'had' to use words that are words. how can we make that fugitive without just dissolving language.like. when there is a question, but all the available answers in the dropdown, make absolutely no sense in relation to the question or title field.\
+pancake \{\
+type: String\
+value: [way to sleep, bestfriendofsyrup, sandwich method, rollover]\
+\}\
+_'; - [3:35 PM]\
+ohyzzZZZzzz\
+- o . . - [3:36 PM]\
+or ok. maybe time for brerin.it's less 'purpose driven'  -- but its like. when people take that hogwarts sorting hat online test to figure out their house\
+pancakes for everyone (edited) \
+spiralingly so\
+act (tivation\
+duration = 1 apple\
+_'; - [3:40 PM]\
+tiny \{\
+type: String\
+value: [disappear into the pattern, googly eyes, the doorbell doesn't work ]\
+\}mm \{\
+type: String\
+value: [how to open a door, waiting for a package]\
+\}towel \{\
+type: String\
+value: [sommersault off diving board, chocolate covered strawberries, floppy huge roll of paper]\
+\}\
+- o . . - [3:41 PM]\
+:yayyy:\
+yah. it's almost like literaliZing the gifs : P\
+_'; - [3:41 PM]\
+omg\
+yzzzz\
+goodinspo\
+- o . . - [3:41 PM]\
+ducksplash\
+how to open a door : PPP\
+wobble\
+wiggle wombat\
+_'; - [3:44 PM]\
+cup: \{\
+type: String\
+value:[clink, shiny, heavy, sharp]\
+\}\
+wobble wiggle wombat\
+!!!\
+ducksplash, popcat, yayorange\
+- o . . - [3:45 PM]\
+yes. but this quality was besttowel \{\
+type: String\
+value: [sommersault off diving board, chocolate covered strawberries, floppy huge roll of paper]\
+\}\
+it's the schiZ, maybe\
+when we talk with the others... we need text values that read in series, do a schiZ, that always generates a surplus (or giggle or whatever)\
+_'; - [3:47 PM]\
+yzzzzzzzz\
+- o . . - [3:47 PM]\
+it's like. some would get to this through cutups\
+_'; - [3:47 PM]\
+goopy popsicle, triangle eight, green kitkat\
+- o . . - [3:47 PM]\
+yesss\
+comme \'e7a\
+_'; - [3:47 PM]\
+eeeeeep\
+schizword gifs for giggles\
+- o . . - [3:48 PM]\
+like. everyone brings a bunch of texts -- got through cosmic digests from slack, or from inspo in spaZe, or whatever. and then create an enabling constraint of 4 fields per object (the json object that will be a specific form field)\
+_'; - [3:48 PM]\
+yessssss\
+yeZZzzzz\
+truly yezzz\
+- o . . - [3:49 PM]\
+and then people can mix/match things to find which combination do a flip/surplus/schiZ thing\
+_'; - [3:49 PM]\
+yes yes yes yes\
+ohhh i just got a printer!!!\
+- o . . - [3:49 PM]\
+hahaha..\
+printercreature\
+_'; - [3:50 PM]\
+omg\
+- o . . - [3:50 PM]\
+typewriter could also be used ///\
+_'; - [3:50 PM]\
+AND\
+a label maker!!!\
+- o . . - [3:50 PM]\
+label maker\
+_'; - [3:50 PM]\
+a new one\
+eeep\
+- o . . - [3:50 PM]\
+ooo\
+_'; - [3:50 PM]\
+omg\
+ohhh\
+- o . . - [3:50 PM]\
+stamp\
+s\
+_'; - [3:50 PM]\
+the colors for the label are green, orange pink, yellow\
+- o . . - [3:50 PM]\
+ok. so we have different writing machines\
+_'; - [3:50 PM]\
+yzzz\
+- o . . - [3:50 PM]\
+\
+  but.\
+\
+_'; - [3:50 PM]\
+many ways to compose it\
+(letter stamps already in the lab!!)\
+okok\
+- o . . - [3:51 PM]\
+ok. so those are fab schiZ fields\
+\
+  for later, just think about what values we might want to use strategically from a database perspective ///\
+\
+i have to go back to coding now ///\
+_'; - [3:51 PM]\
+ok\
+!!\
+eeep\
+- o . . - [3:52 PM]\
+but it's thinking about how we might want to bring 2+ users into association with each other, or an event\
+even though i know we ddon't want to associate around 'users' or individuals // this is a placeholder\
+_'; - [3:53 PM]\
+yzzz\
+- o . . - [3:53 PM]\
+i don't yet know how to build things so that 'the event' or 'project' takes on the actions of the users -- from a backend coding perspective\
+but to get things going... to start a framework to continue studies with --- i'm trying to at least start attaching info to each user\
+just to practice how to think from the backend, and where to create strategic corridors between events/people\
+\
+  its like. the normative way is if wanted to populate a webpage  with users -- how would we select/choose which users have access.\
+\
+then. ok. next step.if we wanted to treat a webspace as an eventspace, how would we select which gifts/traces/data that users have brought to that event, in that event space. how would cross select in a database field way, from a json object, what would get pulled in. //the individual association won't be visible from the front --- it will be invisible to the front end that we are actually pooling data from users// but we're doing a 'sum is greater then its parts' move\
+\
+  ok. next step (harder step). we wanted to treat a webspace as an eventspace, how do we start to associate certain data sets, with that space. data sets that can be qualities, traces, UI preferences (in css modalities), colorality, SOP stage. /// in senselab utopia, the event generates these. but how can we trace this from a data gathering perspective, in a way that isn't entirely user driven.\
+\
+can we trick it into looking like its non-individualiZed at least in the beginning.\
+//because what makes this even harder, is that of course its possible to build a space where anyone with authoriZation, gets access to all the data associated with that event\
+but the ultimate ultimate would be to try and have data leak and drift in an asymmetrical way. a more distributed-via-activation type way. so that it's not that everything is accessible to everyone, all at the same time. //but when a thingy is picked up\
+it's DHT holochain type stuff.... but that's maybe 2 years from now : x\
+_'; - [4:05 PM]\
+could the gifts/traces/data be associated with a fabbed location (or//// chosen location on a map) and associated with the weather there///wind/humidity/sunrise?\
+not sure if this is too much like 'random function'////\
+(but then i think this might not be thinking in a database way and more thinking in a way of how to pull data out)\
+- o . . - [4:06 PM]\
+yes. ... but if everyone chooses montreal... or... location needs to drift. location can be grabbed from IP too, without any form submission\
+_'; - [4:07 PM]\
+ohyzzz\
+- o . . - [4:07 PM]\
+\
+  its like scrabble. or connect 4\
+\
+(the games)\
+_'; - [4:07 PM]\
+or could be a spot clicked on a map that uses location but isn't actually a map so that we get the data without everyone picking montreal///\
+- o . . - [4:07 PM]\
+json is way more flexible then sql, but it's about to to structure the questions you send to a database\
+as the database can't just parse anything. it will only recogniZe questions that it has keywords for already\
+_'; - [4:09 PM]\
+but the ultimate ultimate would be to try and have data leak and drift in an asymmetrical way. a more distributed-via-activation type way. so that it's not that everything is accessible to everyone, all at the same time. //but when a thingy is picked up\
+- o . . - [4:09 PM]\
+i have to go eat/code now. loosing a bit too much time....but thanks for helping me think through a bit. we'll get joel to come in soon, i hope.\
+_'; - [4:10 PM]\
+ok~~~ and maybe sometime this week do a cutups of words??\
+- o . . - [4:11 PM]\
+yes. but have to get  very specific. maybe preconition/constrain the fields a bit. have to think it through some more.gotta go.\
+_'; - [4:12 PM]\
+yzzzzz\
+ivegotta researchmore (edited) \
+- o . . - [4:13 PM]\
+i also. typing is so hard on my computerz right now\
+_'; - [4:13 PM]\
+ohyzzzz!!eeeek\
+- o . . - [4:13 PM]\
+zzit randdomly writes rrrr an rrrrrZZ\
+so i  want to write the other things but its so hard\
+\
+  i want to use the sorting on wed as a way to gif/archive all the thingies\
+\
+i know it's too much to put/insert into that event. but i think a potlatch is going to happen, and a lot will be gotrid of or disappear.\
+so as part of the 'closing procedure' i'm wondering if it's possible to have a mini animated-gif composing Zone. like that day with the ddonuts. but in a very focused way, where the gif is in pursuit of the particular quality that thingy is most articulate in making felt\
+_'; - [4:16 PM]\
+yZzzzzzzzzZz\
+- o . . - [4:16 PM]\
+but i know they don't want that added work.\
+but at the same time, i'm frustrated that when i come saying this is a thing i actually need for 3e, like the gifverse workshop or whatever, its not taken up seriously.or ok. they're all going to get together to read brian's paper and speed date on value an money again.\
+but in terms of 3e building, is that what WE need help with atm? eeeecutups :heavy_check_mark:\
+gifverse :heavy_check_mark: (edited) \
+i think because they are only touching the real-world practice of the thing - and the internal senselab politics of the thing -- or don't know hzow to help with 3e zddzdigital. (Tzah's my fun keyboarzdzdd btw) all the rZ\
+but i can't do all the invitation/mediations of those encounters. so it gets stuck every time.anyways. ok. going toz get lunch and back to code.\
+_'; - [4:28 PM]\
+yzzzzzz ZZZzzZzz\
+but yes to gifverse on wednesday  //// yes to cutups\
+eeeeee thekeyboardddd~~~\
+- o . . - [3:40 PM]\
+rodrigo for techihrz\
+_'; - [4:05 PM]\
+ohhhh!!!!\
+fortomorrow at spzz?\
+_'; - [12:00 PM]\
+:bug:\
+- o . . - [1:01 PM]\
+ohhh.. misse this in the getting ready routine. I'm on my way downtown\
+the other alternative, is that since i will be laptop-less from 4:30 onwards, its instead an evening activation : Pbut anyways. just eating egg on toast, bc i was out of cereal.\
+_'; - [1:28 PM]\
+weeee im moving downtown slowlyyyyy\
+- o . . - [4:57 PM]\
+laptop is not under warrenty. i guess erin only got a year, rather then 3. disaster. 600$ to fix.i may be getting a drink on the way back to concordia.\
+_'; - [5:02 PM]\
+!!\
+- o . . - [8:43 PM]\
+https://www.youtube.com/user/deadendhiphop/videos?view=0&sort=p&flow=gridhttps://www.youtube.com/user/deadendhiphop/videos?view=0&sort=p&flow=gridall their reviews -- i enjoy them a lot bc it's not consensus based. it's a discussion/debate - the myke is my guy. it's study. their older reviews were funnier - but i like how seriously they go in. myke gets all agitated, and obviously i identify with that : PPPPp\
+YouTubeYouTube\
+Dead End Hip Hop\
+No scripts. It's pure unfiltered hip hop conversations and album reviews. No politics. No BS. We Are The People.\
+- o . . - [10:32 PM]\
+very important research. have you seen TankGirl?\
+_'; - [10:33 PM]\
+no!!!\
+oh\
+looks like i need to\
+- o . . - [10:36 PM]\
+very important. it stars the girl that is in point break. lots of people think it's terrible. i think it's amaZing. it's all camp. it's based on a comic book. there are half kangaroo half people, creatures. it has many quotable jokes. its camp and very weird. the studio wouldn't support them after seeing early cuts, so at the end they had to rush just to get it done. but i still enjoy it. it got me through junior high. i was 'jet girl'. at the time, my best friend was 'tank girl'. it won no oscars.  but i still love it. super fun. there's a dance and song routine at the end. i think you'll enjoy it.\
+https://duckduckgo.com/?q=tank+girl&atb=v112-1&iax=images&ia=images\
+_'; - [10:40 PM]\
+eeeeeeep\
+- o . . - [10:41 PM]\
+ok. i'm trying to dynamically remove class childs, because apparently you can't remove the div you want directly. you have to remove the parent to remove the actual target (child) and that's just really too much darwin for me.ok. then i'll try to do one short playlist for tomorrow.\
+i feel like motown is a good middleground for the lyric people though.meanwhile i'm out of dry catfood, an my cat just keeps STArring at me. even though he has his fav wetfood.how is a person supposed to work.and what is the name of the film you recommended?\
+\
+  wait. though have you seen 5th element?\
+\
+but tank girl is way for femme perspective/comraderie. anyways. back to work.\
+_'; - [10:44 PM]\
+schizopolis\
+omgcatssss\
+Loading history...\
+Message Input\
+\
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Deep Blue Pool</title>
+
+<style>
+  html, body {
+    background-color:#2255c3;
+  }
+
+  .pool{
+    color: #64bde4;
+    font-family: "Verdana",  sans-serif;
+  }
+
+
+  </style>
+</head>
+<body>
+  <script>
+    function Preloader(v) {
+
+   window.addEventListener('load', function() {
+       var video = document.querySelector(v);
+       var container = video.parentNode;
+       var preloader = document.createElement('div');
+       var vWidth = window.getComputedStyle(video, null).getPropertyValue('width');
+       var vHeight = window.getComputedStyle(video, null).getPropertyValue('height');
+
+       container.style.position = 'relative';
+       video.style.position = 'absolute';
+       preloader.style.position = 'absolute';
+       preloader.style.width = vWidth;
+       preloader.style.height = vHeight;
+       preloader.style.backgroundColor = '#000';
+       preloader.innerHTML = '<img src="video/whale.gif">';
+
+       container.appendChild(preloader);
+
+       function checkLoad() {
+            if (video.readyState === 4) {
+                container.removeChild(preloader);
+            } else {
+                setTimeout(checkLoad, 100);
+            }
+       }
+
+       checkLoad();
+
+   });
+
+}
+    </script>
+    <script>
+Preloader('#video');
+</script>
+
+<p class="pool">
+<i>DEEP BLUE POOL</i>
+<br>**enjoy these whales while the video loads (or watch a lower quality version <a href="">here</a>)
+  </p>
+
+<div class="container">
+<br><br><br>
+  <video id="video" preload="auto" width="720" height="540" controls>
+   <source src="video/deepbluepool.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+ </video>
+</div>
+
+
+</body>
+
+</html>

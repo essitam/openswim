@@ -1,0 +1,11 @@
+
+.word{
+  font-family: Impact, sans-serif;
+  font-weight: 900;
+  color: #33ccff;
+  -webkit-text-stroke: 1.25px #000099;
+  text-shadow: 0.35rem -0.35rem 0 #000099;
+  letter-spacing: -0.15vw;
+  -webkit-transform: scale(1.05, 1.25);
+          transform: scale(1.05, 1.25);
+}
